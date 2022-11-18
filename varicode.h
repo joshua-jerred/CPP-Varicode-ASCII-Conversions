@@ -159,7 +159,7 @@ const char* const ascii_to_varicode[128] = {
  * @brief Simple unordered_map to convert a string representation of varicode
  * to a char.
  */
-std::unordered_map<std::string, int> varicode_to_ascii = {
+static std::unordered_map<std::string, int> varicode_to_ascii = {
     // ASCII Control Characters (0 - 31)
     {"1010101011"   ,   0   }, // 0	    [NUL]	Null character
     {"1011011011"   ,   1   }, // 1	    [SOH]	Start of Header
